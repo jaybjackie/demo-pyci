@@ -22,7 +22,10 @@ class StatisticsTest(TestCase):
         data = [10.0, 14.0]
         self.assertEqual(2.0, stdev(data))
 
+    def test_average(self):
+        data = [1, 2, 3]
+        self.assertEqual(2, average(data))
             
 if __name__ == '__main__':
     import unittest
-    unittest.main(verbosity=1)
+    unittest.main(verbosity=1) d
