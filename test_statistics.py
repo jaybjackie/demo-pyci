@@ -1,8 +1,5 @@
 from unittest import TestCase
-from statistics import stdev, variance
-
-from numpy import average
-
+from statistics import stdev, variance, average
 
 class StatisticsTest(TestCase):
 
@@ -25,7 +22,12 @@ class StatisticsTest(TestCase):
         data = [10.0, 14.0]
         self.assertEqual(2.0, stdev(data))
 
+    def test_average(self):
+        data = []
+        with self.assertRaises(ValueError):
+            avg = average(data)
 
+            
 if __name__ == '__main__':
     import unittest
     unittest.main(verbosity=1)
