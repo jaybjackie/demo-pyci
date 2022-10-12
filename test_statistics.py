@@ -28,4 +28,4 @@ class StatisticsTest(TestCase):
             
 if __name__ == '__main__':
     import unittest
-    unittest.main(verbosity=1) d
+    unittest.main(verbosity=1)
