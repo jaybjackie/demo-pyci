@@ -19,8 +19,8 @@ class StatisticsTest(TestCase):
         # standard deviation is zero if all same
         data = [10.0, 10.0]
         self.assertEqual(0.0, stdev(data))
-        # variance is 4, std.dev. is sqrt(4)
-        data = [10.0, 10.0]
+        # variance is 4, std.dev is sqrt(4)
+        data = [10.0, 14.0]
         self.assertEqual(2.0, stdev(data))
 
 if __name__ == '__main__':
